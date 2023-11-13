@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: absolute;
+
+    width: 100%;
+    
+    left: 0;
+    top: 0;
+}
+
+.header__left i,
+.header__left span {
+    font-size: 32px;
+}
+
+.header__right ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    list-style-type: none;
+    
+}
+
+.header__right ul li {
+    font-size: 16px;
+
+}
+
+.header__right ul li:nth-child(1){
+    color: red;
+}
+
+.header__right ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* introduce */
+.intro{
+    height: 100vh;
+    background-image: url("./image-video/home_slider.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.intro .title {
+    font-size: 24px;
+    color: white;
+}
+
+.intro .body-content {
+    font-size: 4rem;
+    color: white;
+}
+
+.intro .btn {
+    margin-top: 10px;
+    background-color: rgb(230, 43, 74);
+    padding: 30px 60px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.intro__chervon {
+    animation-name: godown;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.intro__chervon i {
+    font-size: 20px;
+    color: white;
+
+}
+
+@keyframes godown {
+    0% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translate(0,50px);
+    }
+    
+}
+
+/* service */
+.service {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 90px 0;
+    
+}
+
+.service .title {
+    font-size: 16px;
+    color: rgb(230, 43, 74);
+}
+
+.service .body-content{
+    font-size: 3rem;
+    color: white;
+}
+
+.service .desc {
+    color: #888;
+}
+
+.item-edge {
+    width: 3px;
+    background-color:rgb(230, 43, 74) ;
+    height: 100%;
+}
+
+.service .autoplay .autoplay-item{
+    width:200px;
+    background-color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
